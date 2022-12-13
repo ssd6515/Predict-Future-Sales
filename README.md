@@ -1,9 +1,7 @@
-![](UTA-DataScience-Logo.png)
-
 # Project Title
 
-* **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
-"Get Rich" Kaggle challenge (provide link). 
+* This repository holds an attempt to predict total sales for every product and store in the next month from kaggle challenge 'Predict Future Sales.'
+* link - https://www.kaggle.com/competitions/competitive-data-science-predict-future-sales/overview/description
 
 ## Overview
 
