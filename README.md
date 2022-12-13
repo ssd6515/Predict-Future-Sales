@@ -100,7 +100,9 @@ Figure 4:The sale was the highest in 2013 and the lowest in 2015. Looking at the
     * LightGBM: LightGBM is a gradient boosting framework based on decision trees to increases the efficiency of the model and reduces memory usage. It is based on decision tree algorithms and used for ranking, classification. Thus, to improve time and efficiency with grade boosting, I used this model.
 
 ### Training
-
+* Software used:
+  Python packages: numpy, pandas, math, sklearn, seaborn, matplotlib.pyplot, xgboost, lightgbm, joblib, keras
+   
 * XGB Model:
   The model was created as follows:
   <img width="479" alt="Screenshot 2022-12-13 165801" src="https://user-images.githubusercontent.com/89792366/207463278-9819a6b0-8e6c-431b-8441-e8299077cec6.png">
@@ -146,18 +148,26 @@ Figure 4:The sale was the highest in 2013 and the lowest in 2015. Looking at the
 
 * The performance metric is root mean squared error.
 * Table:
-![image](https://user-images.githubusercontent.com/89792366/207466372-fc98b29d-d2a3-4cb3-b682-2dbd57d1ac4d.png)
 
-* Show one (or few) visualization(s) of results, for example ROC curves.
+![image](https://user-images.githubusercontent.com/89792366/207466372-fc98b29d-d2a3-4cb3-b682-2dbd57d1ac4d.png)
+The  following plots show the difference between the difference between true Y_valid and predicted Y_pred from X_valid data.
+* XGB plot:
+  <img width="490" alt="Screenshot 2022-12-13 172621" src="https://user-images.githubusercontent.com/89792366/207467083-1c39f8f5-5271-4628-959d-ed7a62f4a048.png">
+  
+* LightGBM plot:
+  <img width="481" alt="Screenshot 2022-12-13 172711" src="https://user-images.githubusercontent.com/89792366/207467187-1c45fb53-1680-4547-b978-85539f80e0ea.png">
+
+* LSTM plot:
+  <img width="485" alt="Screenshot 2022-12-13 172748" src="https://user-images.githubusercontent.com/89792366/207467250-525d98da-63ee-4723-b9dc-8071b17b3302.png">
+
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+*  From the plots it is seen that the XGBRegressor model was the best among the 3 models as the predicted data was closer to the true value and condensed than the other models. But still, there is large variation from the true value of validation data in XGB model. Overall, the XGB model was not as effective.
 
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+* In future, I can make the models more effective interms of getting accurate predictions. This can be done by deeply understanding the features used and advancing parameters used in models. 
 
 ## How to reproduce results
 
@@ -169,43 +179,34 @@ Figure 4:The sale was the highest in 2013 and the lowest in 2015. Looking at the
 
 ### Overview of files in repository
 
-* Describe the directory structure, if any.
-* List all relavent files and describe their role in the package.
-* An example:
-  * utils.py: various functions that are used in cleaning and visualizing data.
   * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
   * visualization.ipynb: Creates various visualizations of the data.
-  * models.py: Contains functions that build the various models.
   * training-model-1.ipynb: Trains the first model and saves model during training.
   * training-model-2.ipynb: Trains the second model and saves model during training.
   * training-model-3.ipynb: Trains the third model and saves model during training.
   * performance.ipynb: loads multiple trained models and compares results.
   * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
-
-* Note that all of these notebooks should contain enough text for someone to understand what is happening.
+  * submission_lstm.csv - file contaning item_cnt_month for the test data for lstm model.
+  * submission_lgb.csv - file contaning item_cnt_month for the test data for lightgbm model.
+  * submission_xgb.csv - file contaning item_cnt_month for the test data for xgbregressor model.
 
 ### Software Setup
-* List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
+* Python packages: numpy, pandas, math, sklearn, seaborn, matplotlib.pyplot, xgboost, lightgbm, joblib, keras
+* Download seaborn in jupyter - pip install seaborn
+* Download lightgbm in jupyter - pip install lightgbm
+* Download tensorflow in jupyter - pip install tensorflow
+* Download xgboost in jupyter - pip install xgboost
 
 ### Data
 
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
-
-### Training
-
-* Describe how to train the model
-
-#### Performance Evaluation
-
-* Describe how to run the performance evaluation.
+* Download data files required for the project from the following link:
+  https://www.kaggle.com/competitions/competitive-data-science-predict-future-sales/data
 
 
 ## Citations
 
-* Provide any references.
+* https://github.com/waylongo/predict-future-sale
+* https://www.kaggle.com/code/cocoyachi/lightgbm-futuresales
 
 
 
