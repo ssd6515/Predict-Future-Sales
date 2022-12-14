@@ -218,24 +218,36 @@ Figure 4: The sale was the highest in 2013 and the lowest in 2015. Looking at th
 
 ### Performance Comparison
 
+
 * The performance metric is root mean squared error(RMSE).
+
 * Table:
 
+
 ![image](https://user-images.githubusercontent.com/89792366/207466372-fc98b29d-d2a3-4cb3-b682-2dbd57d1ac4d.png)
+
 The  following plots show the difference between the difference between true Y_valid and predicted Y_pred from X_valid data.
+
 * XGB plot:
+
+
   <img width="490" alt="Screenshot 2022-12-13 172621" src="https://user-images.githubusercontent.com/89792366/207467083-1c39f8f5-5271-4628-959d-ed7a62f4a048.png">
+  
+  
   
 * LightGBM plot:
   <img width="481" alt="Screenshot 2022-12-13 172711" src="https://user-images.githubusercontent.com/89792366/207467187-1c45fb53-1680-4547-b978-85539f80e0ea.png">
+  
 
 * LSTM plot:
   <img width="485" alt="Screenshot 2022-12-13 172748" src="https://user-images.githubusercontent.com/89792366/207467250-525d98da-63ee-4723-b9dc-8071b17b3302.png">
+  
 
 
 ### Conclusions
 
 *  From the plots it is seen that the XGBRegressor model was the best among the 3 models as the predicted data was closer to the true value and condensed than the other models. But still, there is large variation from the true value of validation data in XGB model. Overall, the XGB model was not as effective.
+
 
 ### Future Work
 
