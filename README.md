@@ -8,7 +8,7 @@
 
  * **Definition of the tasks / challenge:**  The task is to forecast the total amount of products sold in every shop for the next month with daily historical sales data provided.
  
- * **Your approach:** The approach in this repository formulates the problem by using deep learning models and gradient boost framework with the time series data as the input. The metric considered is root mean squared error. We compared the performance of 3 different network architectures.
+ * **Approach:** The approach in this repository formulates the problem by using deep learning models and gradient boost framework with the time series data as the input. The metric considered is root mean squared error. We compared the performance of 3 different network architectures.
  
  * **Summary of the performance achieved:** Our best model was able to predict the product sale for the shop and item for the next month with the metric(rmse) of 1.11229.
 
