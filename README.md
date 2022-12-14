@@ -49,7 +49,9 @@
 ### Preprocessing / Clean up
 
 * Removed outliers for item_price and item_cnt_day
+
 * Encoded shop_name to city_code, item_category_name to type_code and subtype_code
+
 * Added the following features: 
      * revenue - revenue obtained for the particular datapoint                      
      * item_cnt_month - no. of items sold in a month                                  
@@ -82,11 +84,13 @@ Figure 1:
 Figure 1: Large number of items are sold during the end of each year, but the overall trend for the product sale is decreasing thorughout the timeline. Thus, variables like month, item price for all months, items sold in cities for all months, etc. were added to training dataset.
 
 
+
 Figure 2:
 
 <img width="767" alt="Screenshot 2022-12-13 162714" src="https://user-images.githubusercontent.com/89792366/207458271-dc88c351-204a-4794-81e3-e63b06e7be0b.png">
 
 Figure 2: The 31st shop sold the largest number of items (>300000). 0-24 shops sold 0-100000 items. 25-30 sold a large number of items as well. It shows that the shops between 25-31 are extremely good in selling products, while shops from 0-4,8-11,32-34,36,39-40 are selling less products. Thus variables realted to shops like revenue per shop, etc. were considered.
+
 
 
 Figure 3:
@@ -96,13 +100,15 @@ Figure 3:
 Figure 3: 0-500 is the price range for a large number of items. There are outliers with large value of price. This plot also shows that the items from price range 0-500 had been sold more than expensive items from its height and because each individual id in the train dataset represents sale.
 
 
+
 Figure 4:
 
 <img width="775" alt="Screenshot 2022-12-13 163024" src="https://user-images.githubusercontent.com/89792366/207458777-0d5da835-5bb5-4c54-9543-c941ba07e0e2.png">
 
-Figure 4:The sale was the highest in 2013 and the lowest in 2015. Looking at the graphs above the the product sale has been decreasing and the expected count in month in my opinion should be less.
+Figure 4: The sale was the highest in 2013 and the lowest in 2015. Looking at the graphs above the the product sale has been decreasing and the expected count in month in my opinion should be less.
 
-
+ 
+ 
 ### Problem Formulation
 
 * Data:
@@ -122,45 +128,65 @@ Figure 4:The sale was the highest in 2013 and the lowest in 2015. Looking at the
    * Python packages: numpy, pandas, math, sklearn, seaborn, matplotlib.pyplot, xgboost, lightgbm, joblib, keras
    
 * XGB Model:
+
   The model was created as follows:
+  
   <img width="479" alt="Screenshot 2022-12-13 165801" src="https://user-images.githubusercontent.com/89792366/207463278-9819a6b0-8e6c-431b-8441-e8299077cec6.png">
 
   The model was trained with fit method:
+  
   <img width="488" alt="Screenshot 2022-12-13 165940" src="https://user-images.githubusercontent.com/89792366/207463384-93749b4a-6199-4cac-a67e-17039d62af37.png">
+  
   
    <img width="444" alt="Screenshot 2022-12-13 170836" src="https://user-images.githubusercontent.com/89792366/207464634-5cb2ec69-e8e1-4f6c-bfd2-88c3e7f32219.png">
 
   The feature importance plot was plotted with their f-score: 
   <img width="463" alt="Screenshot 2022-12-13 170032" src="https://user-images.githubusercontent.com/89792366/207463504-29f4513b-867e-45e1-bb3e-b830ff6c990b.png">
+  
   date_shop_avg_item_cnt - Mean no. of items sold per month for each month and item_category_id has the     highest f-score. While type code has the lowest f-score
 
 * LightGBM Model:
+
   The model was created as follows:
+  
   <img width="479" alt="image" src="https://user-images.githubusercontent.com/89792366/207463928-2aa8b325-071f-4045-a784-9442dd82e7b1.png">
   
   The model was trained with fit method:
+  
   <img width="524" alt="Screenshot 2022-12-13 170438" src="https://user-images.githubusercontent.com/89792366/207464117-f5f6e35a-e406-4409-b88c-76dd0c289b9b.png">
   
   <img width="475" alt="Screenshot 2022-12-13 170801" src="https://user-images.githubusercontent.com/89792366/207464523-e771c1bf-8417-4762-8304-d5f46e04c9df.png">
 
+
    The feature importance plot was plotted with their f-score:
+   
    <img width="467" alt="Screenshot 2022-12-13 170554" src="https://user-images.githubusercontent.com/89792366/207464278-8222f476-90b7-45f8-ab74-5823935be4e8.png">
+   
    date_shop_cat_avg_item_cnt - Mean no. of items sold per month for each month and shop_id and item_category_id has the highest f-score. While city code has the lowest f-score
+   
 
 * LSTM Model:
+
    The model was created as follows:
+   
   <img width="763" alt="Screenshot 2022-12-13 171024" src="https://user-images.githubusercontent.com/89792366/207464859-e74a868d-3c63-4643-90f0-b4fce5e3e899.png">
   
   <img width="419" alt="Screenshot 2022-12-13 171101" src="https://user-images.githubusercontent.com/89792366/207464946-e91a35a8-c246-479e-9c75-9b97dd10af12.png">
+  
 
   The model was trained with fit method:
+  
   <img width="818" alt="Screenshot 2022-12-13 171150" src="https://user-images.githubusercontent.com/89792366/207465073-25c3f2d2-89c7-4c1b-b647-0ca9db8daddb.png">
+
 
    The train/valid loss plot:
    
+   
    <img width="302" alt="Screenshot 2022-12-13 171230" src="https://user-images.githubusercontent.com/89792366/207465231-929c79f9-81b2-449a-a37f-c09368f668d6.png">
    
+   
    Validation loss is consistently lower than the training loss, the gap between them remains more or less the same size. It means the model is more accurate on the training model than validation or test.
+
 
 ### Performance Comparison
 
