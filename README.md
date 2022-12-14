@@ -282,26 +282,29 @@ The  following plots show the difference between the difference between true Y_v
    
    * The predictions can be made as follows for valid and test data to get the feature importance and train/valid loss plot and RMSE.
    
-    Feature Importance Plot:
+     * Feature Importance Plot:
     
-    <img width="478" alt="Screenshot 2022-12-13 192408" src="https://user-images.githubusercontent.com/89792366/207481935-8d56a610-03f1-4a8a-99a3-3c400cd815a7.png">
+     <img width="478" alt="Screenshot 2022-12-13 192408" src="https://user-images.githubusercontent.com/89792366/207481935-8d56a610-03f1-4a8a-99a3-3c400cd815a7.png">
     
     
-    Train/Valid Loss Plot:
+     * Train/Valid Loss Plot:
     
     
     <img width="761" alt="Screenshot 2022-12-13 192455" src="https://user-images.githubusercontent.com/89792366/207482023-0c03c8bf-e600-403c-a4f0-2ffa7fdfc52b.png">
+    
 
 
-   * Finally, you can get the plots that show the difference between the difference between true Y_valid and predicted Y_pred from X_valid data as follows:
+    * Finally, you can get the plots that show the difference between the difference between true Y_valid and predicted Y_pred from X_valid data as follows:
+     
    
     <img width="471" alt="Screenshot 2022-12-13 192906" src="https://user-images.githubusercontent.com/89792366/207482555-c8fb482a-4254-4360-90a3-06cd1920ccc0.png">
+    
     
 
     <img width="474" alt="Screenshot 2022-12-13 193008" src="https://user-images.githubusercontent.com/89792366/207482665-13a3c1c6-3ade-44f0-888c-979690dc8b41.png">
 
 
-    Repeat this method for other models.
+    * Repeat this method for other models.
     
     
 ### Overview of files in repository
