@@ -322,7 +322,7 @@ The  following plots show the difference between the difference between true Y_v
   * training-model-3.ipynb: Trains the third model and saves model during training.
   * performance.ipynb: loads multiple trained models and compares results.
   * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
-  * submission_lstm.csv - file contaning item_cnt_month for the test data for lstm model.
+  * lstm_submission.csv - file contaning item_cnt_month for the test data for lstm model.
   * submission_lgb.csv - file contaning item_cnt_month for the test data for lightgbm model.
   * submission_xgb.csv - file contaning item_cnt_month for the test data for xgbregressor model.
 
