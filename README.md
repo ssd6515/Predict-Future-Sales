@@ -129,30 +129,30 @@ Figure 4: The sale was the highest in 2013 and the lowest in 2015. Looking at th
    
 * XGB Model:
 
-  The model was created as follows:
+  The model was created as follows: 
   
   
-  <img width="479" alt="Screenshot 2022-12-13 165801" src="https://user-images.githubusercontent.com/89792366/207463278-9819a6b0-8e6c-431b-8441-e8299077cec6.png">
+  <img width="479" alt="Screenshot 2022-12-13 165801" src="https://user-images.githubusercontent.com/89792366/207463278-9819a6b0-8e6c-431b-8441-e8299077cec6.png"> 
+
+ 
+  The model was trained with fit method: 
+   
+  
+  <img width="488" alt="Screenshot 2022-12-13 165940" src="https://user-images.githubusercontent.com/89792366/207463384-93749b4a-6199-4cac-a67e-17039d62af37.png"> 
+   
+  
+  
+   <img width="444" alt="Screenshot 2022-12-13 170836" src="https://user-images.githubusercontent.com/89792366/207464634-5cb2ec69-e8e1-4f6c-bfd2-88c3e7f32219.png"> 
 
 
-  The model was trained with fit method:
-  
-  
-  <img width="488" alt="Screenshot 2022-12-13 165940" src="https://user-images.githubusercontent.com/89792366/207463384-93749b4a-6199-4cac-a67e-17039d62af37.png">
-  
-  
-  
-   <img width="444" alt="Screenshot 2022-12-13 170836" src="https://user-images.githubusercontent.com/89792366/207464634-5cb2ec69-e8e1-4f6c-bfd2-88c3e7f32219.png">
 
-
-
-  The feature importance plot was plotted with their f-score: 
+  The feature importance plot was plotted with their f-score:  
   
   
-  <img width="463" alt="Screenshot 2022-12-13 170032" src="https://user-images.githubusercontent.com/89792366/207463504-29f4513b-867e-45e1-bb3e-b830ff6c990b.png">
+  <img width="463" alt="Screenshot 2022-12-13 170032" src="https://user-images.githubusercontent.com/89792366/207463504-29f4513b-867e-45e1-bb3e-b830ff6c990b.png"> 
   
   
-  date_shop_avg_item_cnt - Mean no. of items sold per month for each month and item_category_id has the     highest f-score. While type code has the lowest f-score
+  date_shop_avg_item_cnt - Mean no. of items sold per month for each month and item_category_id has the     highest f-score. While type code has the lowest f-score 
 
 
 * LightGBM Model:
