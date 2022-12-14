@@ -262,15 +262,15 @@ The  following plots show the difference between the difference between true Y_v
 
 * To reproduce the results:
 
-   * import XGBRegressor, lightgbm, and LSTM models.
+  * import XGBRegressor, lightgbm, and LSTM models.
    
     * The followings commands can be used to import:
-     * from xgboost import XGBRegressor
-     * from xgboost import plot_importance
-     * import lightgbm as lgb
-     * from keras.models import Sequential
-     * from keras.layers import LSTM, Dense, Dropout
-     * from keras.optimizers import Adam
+      * from xgboost import XGBRegressor
+      * from xgboost import plot_importance
+      * import lightgbm as lgb
+      * from keras.models import Sequential
+      * from keras.layers import LSTM, Dense, Dropout
+      * from keras.optimizers import Adam
      
    * Create the train, valid, test dataset as described:
    
@@ -293,10 +293,13 @@ The  following plots show the difference between the difference between true Y_v
     
     
      <img width="761" alt="Screenshot 2022-12-13 192455" src="https://user-images.githubusercontent.com/89792366/207482023-0c03c8bf-e600-403c-a4f0-2ffa7fdfc52b.png">
+     
     
 
 
     * Finally, you can get the plots that show the difference between the difference between true Y_valid and predicted Y_pred from X_valid data as follows:
+    
+    
      
    
      <img width="471" alt="Screenshot 2022-12-13 192906" src="https://user-images.githubusercontent.com/89792366/207482555-c8fb482a-4254-4360-90a3-06cd1920ccc0.png">
