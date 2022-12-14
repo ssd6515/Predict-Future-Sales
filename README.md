@@ -146,7 +146,7 @@ Figure 4:The sale was the highest in 2013 and the lowest in 2015. Looking at the
 
 ### Performance Comparison
 
-* The performance metric is root mean squared error.
+* The performance metric is root mean squared error(RMSE).
 * Table:
 
 ![image](https://user-images.githubusercontent.com/89792366/207466372-fc98b29d-d2a3-4cb3-b682-2dbd57d1ac4d.png)
@@ -169,14 +169,38 @@ The  following plots show the difference between the difference between true Y_v
 
 * In future, I can make the models more effective interms of getting accurate predictions. This can be done by deeply understanding the features used and advancing parameters used in models. 
 
-## How to reproduce results
+### How to reproduce results
 
-* In this section, provide instructions at least one of the following:
-   * Reproduce your results fully, including training.
-   * Apply this package to other data. For example, how to use the model you trained.
-   * Use this package to perform their own study.
-* Also describe what resources to use for this package, if appropirate. For example, point them to Collab and TPUs.
+* To reproduce the results:
+   * import XGBRegressor, lightgbm, and LSTM models.
+     The followings commands can be used to import:
+     from xgboost import XGBRegressor
+     from xgboost import plot_importance
+     import lightgbm as lgb
+     from keras.models import Sequential
+     from keras.layers import LSTM, Dense, Dropout
+     from keras.optimizers import Adam
+   * Create the train, valid, test dataset as described:
+   
+   <img width="749" alt="Screenshot 2022-12-13 192023" src="https://user-images.githubusercontent.com/89792366/207481413-75bd2f37-aacc-49c7-afcb-56dea2f3413c.png">
 
+   * Create model as described in Training Section.
+   * Train the model as described in Training Section.
+   * The predictions can be made as follows for valid and test data to get the feature importance and train/valid loss plot and RMSE.
+    Feature Importance Plot:
+    <img width="478" alt="Screenshot 2022-12-13 192408" src="https://user-images.githubusercontent.com/89792366/207481935-8d56a610-03f1-4a8a-99a3-3c400cd815a7.png">
+    
+    Train/Valid Loss Plot:
+    
+<img width="761" alt="Screenshot 2022-12-13 192455" src="https://user-images.githubusercontent.com/89792366/207482023-0c03c8bf-e600-403c-a4f0-2ffa7fdfc52b.png">
+
+   * Finally, you can get the plots that show the difference between the difference between true Y_valid and predicted Y_pred from X_valid data as follows:
+    <img width="471" alt="Screenshot 2022-12-13 192906" src="https://user-images.githubusercontent.com/89792366/207482555-c8fb482a-4254-4360-90a3-06cd1920ccc0.png">
+
+<img width="474" alt="Screenshot 2022-12-13 193008" src="https://user-images.githubusercontent.com/89792366/207482665-13a3c1c6-3ade-44f0-888c-979690dc8b41.png">
+
+    Repeat this method for other models.
+    
 ### Overview of files in repository
 
   * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
