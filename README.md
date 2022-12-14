@@ -81,7 +81,7 @@
      
 ### Data Visualization
 
-Histogram plots were used data visualization in this project.
+Histogram plots were used for data visualization in this project.
 
 Figure 1:
 
