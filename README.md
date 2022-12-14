@@ -132,13 +132,13 @@ Figure 4: The sale was the highest in 2013 and the lowest in 2015. Looking at th
   The model was created as follows: 
   
   
-  <img width="479" alt="Screenshot 2022-12-13 165801" src="https://user-images.githubusercontent.com/89792366/207463278-9819a6b0-8e6c-431b-8441-e8299077cec6.png"> 
+    <img width="479" alt="Screenshot 2022-12-13 165801" src="https://user-images.githubusercontent.com/89792366/207463278-9819a6b0-8e6c-431b-8441-e8299077cec6.png"> 
 
  
   The model was trained with fit method: 
    
   
-  <img width="488" alt="Screenshot 2022-12-13 165940" src="https://user-images.githubusercontent.com/89792366/207463384-93749b4a-6199-4cac-a67e-17039d62af37.png"> 
+   <img width="488" alt="Screenshot 2022-12-13 165940" src="https://user-images.githubusercontent.com/89792366/207463384-93749b4a-6199-4cac-a67e-17039d62af37.png"> 
    
   
   
@@ -149,7 +149,7 @@ Figure 4: The sale was the highest in 2013 and the lowest in 2015. Looking at th
   The feature importance plot was plotted with their f-score:  
   
   
-  <img width="463" alt="Screenshot 2022-12-13 170032" src="https://user-images.githubusercontent.com/89792366/207463504-29f4513b-867e-45e1-bb3e-b830ff6c990b.png"> 
+   <img width="463" alt="Screenshot 2022-12-13 170032" src="https://user-images.githubusercontent.com/89792366/207463504-29f4513b-867e-45e1-bb3e-b830ff6c990b.png"> 
   
   
   date_shop_avg_item_cnt - Mean no. of items sold per month for each month and item_category_id has the     highest f-score. While type code has the lowest f-score 
@@ -161,16 +161,16 @@ Figure 4: The sale was the highest in 2013 and the lowest in 2015. Looking at th
   The model was created as follows:
   
   
-  <img width="479" alt="image" src="https://user-images.githubusercontent.com/89792366/207463928-2aa8b325-071f-4045-a784-9442dd82e7b1.png">
+   <img width="479" alt="image" src="https://user-images.githubusercontent.com/89792366/207463928-2aa8b325-071f-4045-a784-9442dd82e7b1.png">
   
   
   The model was trained with fit method:
   
   
-  <img width="524" alt="Screenshot 2022-12-13 170438" src="https://user-images.githubusercontent.com/89792366/207464117-f5f6e35a-e406-4409-b88c-76dd0c289b9b.png">
+   <img width="524" alt="Screenshot 2022-12-13 170438" src="https://user-images.githubusercontent.com/89792366/207464117-f5f6e35a-e406-4409-b88c-76dd0c289b9b.png">
   
   
-  <img width="475" alt="Screenshot 2022-12-13 170801" src="https://user-images.githubusercontent.com/89792366/207464523-e771c1bf-8417-4762-8304-d5f46e04c9df.png">
+   <img width="475" alt="Screenshot 2022-12-13 170801" src="https://user-images.githubusercontent.com/89792366/207464523-e771c1bf-8417-4762-8304-d5f46e04c9df.png">
 
 
 
@@ -190,17 +190,17 @@ Figure 4: The sale was the highest in 2013 and the lowest in 2015. Looking at th
    The model was created as follows:
    
    
-  <img width="763" alt="Screenshot 2022-12-13 171024" src="https://user-images.githubusercontent.com/89792366/207464859-e74a868d-3c63-4643-90f0-b4fce5e3e899.png">
+   <img width="763" alt="Screenshot 2022-12-13 171024" src="https://user-images.githubusercontent.com/89792366/207464859-e74a868d-3c63-4643-90f0-b4fce5e3e899.png">
   
   
-  <img width="419" alt="Screenshot 2022-12-13 171101" src="https://user-images.githubusercontent.com/89792366/207464946-e91a35a8-c246-479e-9c75-9b97dd10af12.png">
+   <img width="419" alt="Screenshot 2022-12-13 171101" src="https://user-images.githubusercontent.com/89792366/207464946-e91a35a8-c246-479e-9c75-9b97dd10af12.png">
   
   
 
   The model was trained with fit method:
   
   
-  <img width="818" alt="Screenshot 2022-12-13 171150" src="https://user-images.githubusercontent.com/89792366/207465073-25c3f2d2-89c7-4c1b-b647-0ca9db8daddb.png">
+   <img width="818" alt="Screenshot 2022-12-13 171150" src="https://user-images.githubusercontent.com/89792366/207465073-25c3f2d2-89c7-4c1b-b647-0ca9db8daddb.png">
 
 
 
@@ -224,7 +224,7 @@ Figure 4: The sale was the highest in 2013 and the lowest in 2015. Looking at th
 * Table:
 
 
-![image](https://user-images.githubusercontent.com/89792366/207466372-fc98b29d-d2a3-4cb3-b682-2dbd57d1ac4d.png)
+   ![image](https://user-images.githubusercontent.com/89792366/207466372-fc98b29d-d2a3-4cb3-b682-2dbd57d1ac4d.png)
 
 The  following plots show the difference between the difference between true Y_valid and predicted Y_pred from X_valid data.
 
@@ -236,10 +236,12 @@ The  following plots show the difference between the difference between true Y_v
   
   
 * LightGBM plot:
+* 
   <img width="481" alt="Screenshot 2022-12-13 172711" src="https://user-images.githubusercontent.com/89792366/207467187-1c45fb53-1680-4547-b978-85539f80e0ea.png">
   
 
 * LSTM plot:
+* 
   <img width="485" alt="Screenshot 2022-12-13 172748" src="https://user-images.githubusercontent.com/89792366/207467250-525d98da-63ee-4723-b9dc-8071b17b3302.png">
   
 
@@ -255,35 +257,52 @@ The  following plots show the difference between the difference between true Y_v
 
 ### How to reproduce results
 
+
 * To reproduce the results:
+
    * import XGBRegressor, lightgbm, and LSTM models.
-     The followings commands can be used to import:
+   
+     *The followings commands can be used to import:
      from xgboost import XGBRegressor
      from xgboost import plot_importance
      import lightgbm as lgb
      from keras.models import Sequential
      from keras.layers import LSTM, Dense, Dropout
      from keras.optimizers import Adam
+     
    * Create the train, valid, test dataset as described:
    
+   
    <img width="749" alt="Screenshot 2022-12-13 192023" src="https://user-images.githubusercontent.com/89792366/207481413-75bd2f37-aacc-49c7-afcb-56dea2f3413c.png">
+   
 
    * Create model as described in Training Section.
+   
    * Train the model as described in Training Section.
+   
    * The predictions can be made as follows for valid and test data to get the feature importance and train/valid loss plot and RMSE.
+   
     Feature Importance Plot:
+    
     <img width="478" alt="Screenshot 2022-12-13 192408" src="https://user-images.githubusercontent.com/89792366/207481935-8d56a610-03f1-4a8a-99a3-3c400cd815a7.png">
+    
     
     Train/Valid Loss Plot:
     
-<img width="761" alt="Screenshot 2022-12-13 192455" src="https://user-images.githubusercontent.com/89792366/207482023-0c03c8bf-e600-403c-a4f0-2ffa7fdfc52b.png">
+    
+    <img width="761" alt="Screenshot 2022-12-13 192455" src="https://user-images.githubusercontent.com/89792366/207482023-0c03c8bf-e600-403c-a4f0-2ffa7fdfc52b.png">
+
 
    * Finally, you can get the plots that show the difference between the difference between true Y_valid and predicted Y_pred from X_valid data as follows:
+   
     <img width="471" alt="Screenshot 2022-12-13 192906" src="https://user-images.githubusercontent.com/89792366/207482555-c8fb482a-4254-4360-90a3-06cd1920ccc0.png">
+    
 
-<img width="474" alt="Screenshot 2022-12-13 193008" src="https://user-images.githubusercontent.com/89792366/207482665-13a3c1c6-3ade-44f0-888c-979690dc8b41.png">
+    <img width="474" alt="Screenshot 2022-12-13 193008" src="https://user-images.githubusercontent.com/89792366/207482665-13a3c1c6-3ade-44f0-888c-979690dc8b41.png">
+
 
     Repeat this method for other models.
+    
     
 ### Overview of files in repository
 
@@ -299,6 +318,7 @@ The  following plots show the difference between the difference between true Y_v
   * submission_xgb.csv - file contaning item_cnt_month for the test data for xgbregressor model.
 
 ### Software Setup
+
 * Python packages: numpy, pandas, math, sklearn, seaborn, matplotlib.pyplot, xgboost, lightgbm, joblib, keras
 * Download seaborn in jupyter - pip install seaborn
 * Download lightgbm in jupyter - pip install lightgbm
